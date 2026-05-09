@@ -1,0 +1,18 @@
+;
+; BIND data file for centro.local
+;
+$TTL    604800
+@       IN      SOA     srv-infra.centro.local. admin.centro.local. (
+                              3         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@       IN      NS      srv-infra.centro.local.
+
+; Registros A (Nombre -> IP)
+srv-infra  IN      A       192.168.106.36
+ldap       IN      A       192.168.106.36
+intranet   IN      A       192.168.170.186
+ftp        IN      A       192.168.170.186

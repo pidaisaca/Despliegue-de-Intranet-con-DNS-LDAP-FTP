@@ -1,0 +1,7 @@
+dn: ou=usuarios,dc=centro,dc=local
+objectClass: organizationalUnit
+ou: usuarios
+
+dn: ou=grupos,dc=centro,dc=local
+objectClass: organizationalUnit
+ou: grupos

@@ -1,0 +1,59 @@
+# --- GRUPOS ---
+dn: cn=profesores,ou=grupos,dc=centro,dc=local
+objectClass: posixGroup
+cn: profesores
+gidNumber: 5000
+
+dn: cn=alumnos,ou=grupos,dc=centro,dc=local
+objectClass: posixGroup
+cn: alumnos
+gidNumber: 5001
+
+# --- USUARIOS ---
+dn: uid=daniel,ou=usuarios,dc=centro,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: daniel
+sn: Daniel
+cn: Daniel
+uidNumber: 10001
+gidNumber: 5001
+homeDirectory: /home/daniel
+loginShell: /bin/bash
+
+dn: uid=jose,ou=usuarios,dc=centro,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: jose
+sn: Jose
+cn: Jose
+uidNumber: 10002
+gidNumber: 5001
+homeDirectory: /home/jose
+loginShell: /bin/bash
+
+dn: uid=profdaniel,ou=usuarios,dc=centro,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: profdaniel
+sn: ProfDaniel
+cn: prof Daniel
+uidNumber: 10003
+gidNumber: 5000
+homeDirectory: /home/profdaniel
+loginShell: /bin/bash
+
+dn: uid=profjose,ou=usuarios,dc=centro,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: profjose
+sn: ProfJose
+cn: prof Jose
+uidNumber: 10004
+gidNumber: 5000
+homeDirectory: /home/profjose
+loginShell: /bin/bash
